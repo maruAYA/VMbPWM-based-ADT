@@ -2,11 +2,33 @@
 
 Hi there! Here are the simulation codes and bitstreams of the VMbPWM-based ADT proposed in the work 'Can multi-bit deduction help? A VMbPWM-based ADT towards higher in-band SNRs evolved from VbPWM at the cost of enlarged resource consumption' and the VbPWM-based ADT in the work 'VbPWM-based ADT: An Iterative Deduction Approach Restricting the Traversal of MPWM at the Cost of In-Band SNR' (you can find it at https://ieeexplore.ieee.org/document/10766909). I will show you, step by step, on how to perform a simulation or how to implement the proposed ADT in your ZCU102 for a quick evaluation. 
 
-## Simulation
+## Run the Simulation
 
-I personally recommend you run the simulation first to have a glance over the VMbPWM. 
+I personally recommend you run the simulation first to have a glance over the VMbPWM-based ADT. Codes are included in ./Simulation, where the ADT_VbMbPWM.m serves as the main entrance of the simulation. For some reason I cannot give you the original code, instead I will provide the binary file named '~.mexw64' compiled by the Matlab Coder, thereby you could use evaluate the VMbPWM in your own simulation platforms. 
 
-## Preparation
+### Preparation
+
+You shall first prepare
+- A host PC that could run Matlab R2023b with at least 8 cores and 16 GB of RAM (otherwise I suggest you disable the spmd function in ADT_VbMbPWM.m, where I will show you how to do so a little bit latter)
+
+You also need to install the following softwares:
+- Matlab R2023b (other version of Matlab might supports using the compiled MEX file, but I have not tested yet)
+
+### How to run
+
+Running the simulation is quite simple: 
+- Open ./Simulation/ADT_VbMbPWM.m with Matlab
+- Click Run
+- Wait patiently while the code is being execeuted
+- Check the results
+
+### Run with other symbol rates
+
+
+
+## Run the bitstream
+
+### Preparation
 
 You shall first prepare
 - A host PC that could at least run Vivado and Matlab (Windows 11 is recommended, and other OS is not tested for the following procedures),
@@ -18,7 +40,7 @@ You also need to install the following softwares:
 - Matlab R2023b (or other versions as long as it supports the function 'dec2hex'),
 - ZCU102 System Controller User Interface (you can find it at https://adaptivesupport.amd.com/s/question/0D52E00006iHoSMSA0/find-scui-download-for-zcu102?language=en_US or https://www.xilinx.com/member/forms/download/design-license.html?cid=ac58ab65-c8ed-483c-abe1-891152eb3d95&filename=rdf0382-zcu102-system-controller-c-2018-3.zip)
 
-## Configure the clock frequency
+### Configure the clock frequency
 
 You need to configure the Si570 on ZCU102 to meet the requirements raised from the MMCM and GTH in the bitstream. I will only present the esential steps to configure the clock frequency, as for the detailed instructions please refer to https://www.xilinx.com/member/forms/download/design-license.html?cid=2bcb43d9-66d4-4a10-8d30-d01defd6b8cf&filename=xtp433-zcu102-system-controller-c-2018-3.pdf. 
 - Connnect ZCU102 and the host PC
@@ -30,7 +52,7 @@ You need to configure the Si570 on ZCU102 to meet the requirements raised from t
 
 - Read the carrier frequency to verify if the Si570 is programmed with the desired frequencies. 
 
-## Program FPGA and configure the register map
+### Program FPGA and configure the register map
 
 After configuring the frequencies, it is time to program the FPGA with the bitstreams inside ./Bitstream: 
 - Open vivado and open the hardware target to program the ZCU102 with your desired bit
