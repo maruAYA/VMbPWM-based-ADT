@@ -22,11 +22,48 @@ Running the simulation is quite simple:
 - Wait patiently while the code is being execeuted
 - Check the results
 
-### Run with other symbol rates
+### Run Under other symbol rates
 
+Symbol rates can be easily changed by assigning different values to $f_{BB}$ on line 10. Please be aware that $f_{IF}$ should be a multiple of $f_{BB}$ so that the upsample function can work properly. 
 
+### Run with different $M$
 
-## Run the bitstream
+The mentioned $M$ in the paper, which denotes how many bits are deduced in a single iteration, is set on line 64 as the last parameter of function VbMbPWM_mex. We have tested the function under $M$ being 2, 4 and 8, and you might use the value 16 if you are curious about its performance. 
+
+### Run with the $M$ combination
+
+Another feature provided by the VMbPWM is that the amount of deduced bits in each iteration could be different. To use the setup $M=2(24)8(2)$ presented in the paper, simply replace line 63-64 to 
+```
+        [out_org,~]=VbMbPWM_228_mex(s,N,f_c,f_s);
+        %[out_org,~]=VbMbPWM_mex(s,N,f_c,f_s,8);
+```
+and run the code. 
+
+### Run with spmd disabled
+
+If you want to disable the spmd function for less memory usage, you shall first comment line 3 so that
+```
+%parpool(8);
+```
+and then replace line 56 to 71 with 
+```
+%lab_seg_len = floor(length(IF_sym_phaseCorr) / 8);
+%spmd
+    %current_lab = spmdIndex();
+    for current_index = 1:1:length(IF_sym_phaseCorr)
+        f_c_in = f_c / 1e6;
+        f_s_in = f_s / 1e6;
+        s = r .* IF_sym_phaseCorr(current_index);
+        % [out_org,~]=VbMbPWM_228_mex(s,N,f_c,f_s);
+        [out_org,~]=VbMbPWM_mex(s,N,f_c,f_s,8);
+        target_path_org((current_index-1)*N+1:current_index*N) = double(out_org);
+    end
+end
+RF_bin_org = target_path_org;
+```
+Afterward, you can run the code with the spmd disabled. 
+
+## Download the bitstream
 
 ### Preparation
 
