@@ -1,0 +1,870 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "250025017"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "u_glb_rst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "E740DA7EA65D5D4AB1076DE8D5EB8029",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "glb_rstn",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "vio_IF_sym_real",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "vio_IF_sym_real[11]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[10]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[9]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[8]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[7]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[6]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[5]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[4]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[3]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[2]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[1]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_real[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "vio_IF_sym_imag",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "vio_IF_sym_imag[11]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[10]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[9]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[8]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[7]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[6]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[5]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[4]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[3]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[2]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[1]"
+                                            },
+                                            {
+                                                "name": "vio_IF_sym_imag[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "VbPWM_rstn",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "gth_tx_rst",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "gth_rx_rst",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "u_vio_regmap/u_ip_vio_expVecImag",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "CC16D5229D4C558695759BE2A9700E46",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecImagEN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 7,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecImag",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[15]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[14]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[13]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[12]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[11]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[10]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[9]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[8]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[7]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[6]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[5]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[4]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[3]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[2]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[1]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImag[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecImagAddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[5]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[4]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[3]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[2]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[1]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecImagAddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "u_vio_regmap/u_ip_vio_expVecReal",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 2,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "18D62ED273C05B01B707D7F1DA4C05B6",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 9,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecRealEN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 10,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecReal",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[15]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[14]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[13]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[12]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[11]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[10]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[9]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[8]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[7]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[6]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[5]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[4]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[3]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[2]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[1]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecReal[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 11,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "u_vio_regmap/i_vio_expVecRealAddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[5]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[4]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[3]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[2]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[1]"
+                                            },
+                                            {
+                                                "name": "u_vio_regmap/i_vio_expVecRealAddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 3,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "gth250_target_path",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "gth250_target_path[63]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[62]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[61]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[60]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[59]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[58]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[57]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[56]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[55]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[54]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[53]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[52]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[51]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[50]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[49]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[48]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[47]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[46]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[45]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[44]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[43]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[42]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[41]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[40]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[39]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[38]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[37]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[36]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[35]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[34]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[33]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[32]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[31]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[30]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[29]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[28]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[27]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[26]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[25]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[24]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[23]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[22]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[21]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[20]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[19]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[18]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[17]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[16]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[15]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[14]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[13]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[12]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[11]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[10]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[9]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[8]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[7]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[6]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[5]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[4]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[3]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[2]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[1]"
+                                            },
+                                            {
+                                                "name": "gth250_target_path[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "async_fifo_empty",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "gtpowergood_out",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_1",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 4,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3b505a030738513c98471d25f5b1f848",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "IF_sym_imag",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "IF_sym_imag[15]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[14]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[13]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[12]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[11]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[10]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[9]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[8]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[7]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[6]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[5]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[4]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[3]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[2]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[1]"
+                                            },
+                                            {
+                                                "name": "IF_sym_imag[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "IF_sym_real",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "IF_sym_real[15]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[14]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[13]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[12]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[11]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[10]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[9]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[8]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[7]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[6]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[5]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[4]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[3]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[2]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[1]"
+                                            },
+                                            {
+                                                "name": "IF_sym_real[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
