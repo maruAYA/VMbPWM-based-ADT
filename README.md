@@ -1,5 +1,17 @@
 # VMbPWM-ADT
 
+***
+
+## Updated on 25.09.28
+
+We have added bitstreams and reports of the newly proposed DoubleVbMbPWM-based ADT to the bitstream folder and the report folder. Feel free to verify the ACPR and the EVM on your device. 
+
+***
+
+The initial context begins from here. 
+
+***
+
 Hi there! Here are the simulation codes and bitstreams of the VMbPWM-based ADT proposed in the work 'A Complexity Reduced VMbPWM-based All-Digital Transmitter With Multi-bit Deduction Towards Higher In-Band SNR' and the VbPWM-based ADT in the work 'VbPWM-based ADT: An Iterative Deduction Approach Restricting the Traversal of MPWM at the Cost of In-Band SNR' (you can find it at https://ieeexplore.ieee.org/document/10766909). I will show you, step by step, how to perform a simulation or how to implement the proposed ADT in your ZCU102 for a quick evaluation. 
 
 ## Run the Simulation
